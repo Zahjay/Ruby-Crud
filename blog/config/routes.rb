@@ -1,3 +1,5 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'welcome/index'
+root 'welcome#index'
 end
+#added root to this file this was created from this command bin/rails generate controller Welcome index
