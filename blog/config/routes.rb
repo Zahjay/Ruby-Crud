@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
-root 'welcome#index'
+
+  resources :articles
+  
+  root 'welcome#index'
 end
-#added root to this file this was created from this command bin/rails generate controller Welcome index
+# The first thing I added to this file was the root it was created from this command bin/rails generate controller Welcome index
+
+#The second thing I added to this file is the resources: article it assists with CRUD functionality.
